@@ -31,7 +31,8 @@ Route::get('/', function () {
 //    $post->title='savedtitle';
 //    $post->content='savedcontent';
 //    $post->save();
-    \App\Post::destroy(2);
+    \App\Post::destroy(3,5,7);
+
 
 
 
