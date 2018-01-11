@@ -12,8 +12,11 @@
 */
 
 Route::get('/', function () {
-    $post=new\App\Post();
-    $post->title='testtitle';
-    $post->content='testcontent';
-    $post->save();
+//    $post=new\App\Post();
+//    $post->title='testtitle';
+//    $post->content='testcontent';
+//    $post->save();
+    $posts=\App\Post::all();
+    dd($posts);
+
 });
