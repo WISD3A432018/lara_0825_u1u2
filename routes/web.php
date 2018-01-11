@@ -40,9 +40,13 @@ Route::get('/', function () {
 
 //    $fourthPost=\App\Post::find(4);
 //    dd($fourthPost);
-    $lastPost=\App\Post::orderBy('id','DESC')‐>first();
-    dd($lastPost);
+//    $lastPost=\App\Post::orderBy('id','DESC')->first();
+//    dd($lastPost);
 
+    $post=\App\Post::find(1);
+    foreach($post->comments as $comment){
+        echo $comment->comment.'<br>';
+    }
 
 
 });
